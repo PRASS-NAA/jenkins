@@ -2,11 +2,11 @@ FROM node:alpine
 
 WORKDIR /app
 
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm install --omit=dev
 
-COPY . .
+COPY . ./
 
 EXPOSE 5173
 
