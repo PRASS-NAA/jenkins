@@ -18,5 +18,5 @@ app.use('/api/products', ProductRoutes);
 
 app.listen(PORT, () =>
 {
-    console.log("server running on PORT : ", PORT );
+    console.log(`Server Running on PORT ${PORT}`);
 })
