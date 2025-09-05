@@ -19,8 +19,9 @@ export const addProducts = (req,res) =>
     res.status(201).json({data : 'product added succesfully '});
 }
 
-export const getProducts = (req, res) =>
+export const getProducts = (res) =>
 {
     console.log("fetching products");
+    
     res.status(200).json({data : products, success : true})
 }
